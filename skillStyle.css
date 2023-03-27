@@ -1,0 +1,145 @@
+body{
+	margin: 0;
+	padding: 0;
+    background-image: url("https://i.pinimg.com/originals/7e/15/5e/7e155e274bee9a49fd998d10754614c7.jpg");
+	align-content:center;
+}
+
+
+h1{ /*change font family of heading*/
+	font-family: sans-serif;
+    margin: 20px 50px 30px 20px;
+    padding: 30px;
+}
+
+li{ /*style the li tag*/
+	list-style-type: none;
+	font-family: sans-serif;
+}
+
+.skills{ /*style the text*/
+	width: 600px;
+    height: 650px;
+	margin: 60px auto;
+	border-radius: 50px;
+    background-image: linear-gradient(100deg,#b84ac7,#5b0470);
+	color: #fff;
+}
+
+.skills li{ /*set margin of li*/
+	margin: 20px 50px;
+}
+
+.bar{ /*style the bar*/
+	background-color: #353b48;
+	display: block;
+	height: 2px;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 3px;
+	overflow: hidden;
+	box-shadow: 0 0 10px #2187e7b3;
+}
+
+.bar span{ /*style the span tag*/
+	height: 2px;
+	float: left;
+	background-color: #2187e7;
+}
+
+.C{ /*set skills and animation of html*/
+	width: 70%;
+	animation: C 2s;
+}
+
+.Cpp{ /*set skills and animation of css*/
+	width: 85%;
+	animation: Cpp 2s;
+}
+
+.python{ /*set skills and animation of javascript*/
+	width: 70%;
+	animation: python 2s;
+}
+
+.html{ /*set skills and animation of jquery*/
+	width: 85%;
+	animation: html 2s;
+}
+.css{
+	width: 90%;
+	animation: css 2s;
+}
+.js{
+	width: 50%;
+	animation: js 2s;
+}
+.matplot{
+	width: 55%;
+	animation: matplot 2s;
+}
+@keyframes C{ 
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 70%;
+	}
+}
+
+@keyframes Cpp{ 
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 85%;
+	}
+}
+
+@keyframes js{ /*animate javascript skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 50%;
+	}
+}
+
+@keyframes python{ 
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 70%;
+	}
+}
+@keyframes html{ 
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 85%;
+	}
+}
+@keyframes css{ 
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 90%;
+	}
+}
+@keyframes matplot{ 
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 55%;
+	}
+}
