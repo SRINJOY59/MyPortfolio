@@ -1,37 +1,44 @@
 body{
 	margin: 0;
 	padding: 0;
-    background-image: url("https://i.pinimg.com/originals/7e/15/5e/7e155e274bee9a49fd998d10754614c7.jpg");
-	align-content:center;
+	background-color: #ca34b1;
 }
 
+/* Use a container to center the content */
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
 
 h1{ /*change font family of heading*/
 	font-family: sans-serif;
-    margin: 20px 50px 30px 20px;
-    padding: 30px;
+	margin: 20px 0;
+	padding: 30px;
 }
 
-li{ /*style the li tag*/
+ul{ /*style the ul tag*/
 	list-style-type: none;
 	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
 }
 
 .skills{ /*style the text*/
-	width: 600px;
-    height: 650px;
+	max-width: 600px;
 	margin: 60px auto;
 	border-radius: 50px;
-    background-image: linear-gradient(100deg,#b84ac7,#5b0470);
+	background-image: linear-gradient(100deg,#c02666,#5b0470);
 	color: #fff;
+	padding: 40px;
 }
 
 .skills li{ /*set margin of li*/
-	margin: 20px 50px;
+	margin: 20px 0;
 }
 
 .bar{ /*style the bar*/
-	background-color: #353b48;
+	background-color: #3063d3;
 	display: block;
 	height: 2px;
 	border: 1px solid rgba(0,0,0,0.3);
@@ -46,100 +53,69 @@ li{ /*style the li tag*/
 	background-color: #2187e7;
 }
 
-.C{ /*set skills and animation of html*/
-	width: 70%;
+/* Set skills and animation for each language */
+.C{
 	animation: C 2s;
 }
 
-.Cpp{ /*set skills and animation of css*/
-	width: 85%;
+.Cpp{
 	animation: Cpp 2s;
 }
 
-.python{ /*set skills and animation of javascript*/
-	width: 70%;
+.python{
 	animation: python 2s;
 }
 
-.html{ /*set skills and animation of jquery*/
-	width: 85%;
+.html{
 	animation: html 2s;
 }
+
 .css{
-	width: 90%;
 	animation: css 2s;
 }
+
 .js{
-	width: 50%;
 	animation: js 2s;
 }
+
 .matplot{
-	width: 55%;
 	animation: matplot 2s;
 }
-@keyframes C{ 
-	0%{
-		width: 0%;
-	}
 
-	100%{
+/* Set the width for each language based on screen size */
+@media only screen and (max-width: 768px) {
+	.skills {
+		padding: 20px;
+	}
+	.skills li {
+		margin: 10px 0;
+	}
+	.C, .Cpp, .python, .html, .css, .js, .matplot {
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.C{
 		width: 70%;
 	}
-}
-
-@keyframes Cpp{ 
-	0%{
-		width: 0%;
-	}
-
-	100%{
+	.Cpp{
 		width: 85%;
 	}
-}
-
-@keyframes js{ /*animate javascript skills*/
-	0%{
-		width: 0%;
-	}
-
-	100%{
-		width: 50%;
-	}
-}
-
-@keyframes python{ 
-	0%{
-		width: 0%;
-	}
-
-	100%{
+	.python{
 		width: 70%;
 	}
-}
-@keyframes html{ 
-	0%{
-		width: 0%;
-	}
-
-	100%{
+	.html{
 		width: 85%;
 	}
-}
-@keyframes css{ 
-	0%{
-		width: 0%;
-	}
-
-	100%{
+	.css{
 		width: 90%;
 	}
-}
-@keyframes matplot{ 
-	0%{
-		width: 0%;
+	.js{
+		width: 50%;
 	}
-
-	100%{
+	.matplot{
 		width: 55%;
 	}
 }
+
