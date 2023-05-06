@@ -208,10 +208,15 @@ button:hover{
 .li1,a{
   display: flex;
   flex-direction: row;
+  position: relative;
+  right: 15px;
 }
 .li2,a{
   display: flex;
   flex-direction: row;
+  font-size: 1px;
+  position: relative;
+  right: 15px;
 }
   .wrapper {
     height: auto;
